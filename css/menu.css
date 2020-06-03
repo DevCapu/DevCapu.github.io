@@ -1,0 +1,66 @@
+.menu {
+    width: 100%;
+}
+
+.menu__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    font-size: 28pt;
+    padding: 1rem;
+    font-family: 'Ropa Sans', sans-serif;
+    color: white;
+}
+
+.--frontend {
+    background-color:  #74DEFF;
+}
+
+.--backend {
+    background-color:  #0A48E8;
+}
+
+.--inovacao {
+    background-color:  #F29220;
+}
+
+.--infra {
+    background-color:  #EF2222;
+}
+
+.--metodologia {
+    background-color:  #4DB41C;
+}
+
+.--ux {
+    background-color:  #B55FFA;
+}
+
+.--data {
+    background-color:  #62EB5F;
+}
+
+.--marketing {
+    background-color:  #7E47C3;
+}
+
+@media (min-width: 768px) {
+    .menu__list {
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu__item{
+        font-family: 'Ropa Sans', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+}

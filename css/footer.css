@@ -1,0 +1,98 @@
+.rodape {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #D5F0FC;
+    text-decoration: none;
+    font-size: 17pt;
+    font-family: 'Ropa Sans', sans-serif;
+
+}
+
+.rodape__link {
+    cursor: pointer;
+    transition-property: color, transform;
+    transition-duration: 500ms, 1s;
+    margin-bottom: .5rem;
+}
+
+.rodape__link:hover {
+    color: #333;
+    text-decoration: underline;
+    transform: translateX(1rem);
+}
+
+.form__cadastro {
+    margin: 1rem 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+
+}
+
+.form__cadastro__text {
+    font-size: 14pt;
+}
+
+.form__cadastro__text:nth-child(even) {
+    margin: 1rem 0 1.2rem;
+}
+
+.form__cadastro__form {
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.form__cadastro__input {
+    width: 66%;
+    height: 2rem;
+    margin: 0;
+    border: 1px solid #333;
+    padding: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.form__cadastro__cta {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 34%;
+    font-size: 1.5rem;
+    border: none;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+}
+
+.rodape__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Allan', cursive;
+    font-size: 56pt;
+    color: #545454;
+}
+
+@media (min-width: 768px) {
+    .rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .form__cadastro {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .rodape {
+        padding: 2rem 10rem;
+    }
+}

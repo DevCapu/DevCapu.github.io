@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/artigos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/social-media.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/post.css">
+</head>
+<body>
+<header class="header">
+    <a  class="qualquer-coisa" href="index.html">
+        <h1 class="title">Sapiens</h1>
+        <span class="slogan">"Para pessoas evoluidas"</span>
+    </a>
+    <form class="search__form" action="#" method="get">
+        <label class="search__label" for="search">
+            <input class="search__input" id="search" type="search"/>
+        </label>
+    </form>
+</header>
+<nav class="menu">
+    <ul class="menu__list">
+        <li class="menu__item --frontend">Frontend</li>
+        <li class="menu__item --backend">Backend</li>
+        <li class="menu__item --inovacao">Inovação</li>
+        <li class="menu__item --infra">Infraestrutura</li>
+        <li class="menu__item --metodologia">Metodologias</li>
+        <li class="menu__item --ux">Design e UX</li>
+        <li class="menu__item --data">Data Science</li>
+        <li class="menu__item --marketing">Marketing</li>
+    </ul>
+</nav>
+<main>
+    <div class="cosmos-container cosmos-header"><h1>Sistemas de Informação: Como é o curso?</h1>
+        <div class="cosmos-header-info">
+            <div class="cosmos-author">
+                <img class="cosmos-author-img" src="./img/autores/marissa_mayer_ap_195.jpg"
+                     alt="Marissa Mayer">
+                <div class="cosmos-author-name">Marissa Mayer</div>
+                <time class="cosmos-author-date" datetime="2020-05-12 12:59">12 de Maio</time>
+            </div>
+            <div class="cosmos-related-item cosmos-related-item__formacao">
+                <a href="/formacao-programacao">
+                    <img src="https://www.alura.com.br/assets/api/formacoes/categorias/programacao.svg">
+                    <span class="cosmos-related-item-title">Programação</span>
+                </a></div>
+        </div>
+    </div>
+    <div class="cosmos-container cosmos-content"><p>Fui contratado por um e-commerce para criar modelos de inteligência
+        artificial que ajudam a entender melhor os clientes.</p>
+        <p>Esses modelos serão usados para saber quanto vai custar o frete de um produto, ver se um cliente vai comprar
+            ou não e agrupar clientes com gostos parecidos.</p>
+        <p>Mas como funcionam esses algoritmos? Teremos apenas um para fazer todas essas funções? Temos que treinar cada
+            algoritmo?</p>
+        <h3>O aprendizado de máquinas</h3>
+        <p>Em todos os casos queremos ensinar a máquina a trabalhar com os nossos dados. Por exemplo, para calcular o
+            preço de frete de um produto. O frete pode ser diferente dependendo da taxa de cobrança para a distância e
+            quantidade de produtos.</p>
+        <p>Essa taxa não tem um valor fixo, ela depende de outros fatores do mercado como o preço do combustível, os
+            impostos em cima dos produtos, entre outras coisas. De toda forma, quando um usuário pedir para calcular o
+            frete, a gente deve poder estimar um valor.</p>
+        <p>Porém, como podemos estimar o frete se a taxa pode mudar? Mesmo com a taxa mudando o seu valor, podemos
+            utilizar valores dos fretes passados como forma para estimar o frete futuro. Ou seja, podemos ter um modelo,
+            <strong>um algoritmo de inteligência artificial</strong>, que estimará o frete para a gente.</p>
+        <p>Para isso, basta treinar esse algoritmo com os fretes antigos, ensinar a ele como eles foram calculados.
+            Quando um frete novo for ser calculado ele pode utilizar esses dados para descobrir o valor que
+            queremos.</p>
+        <p>Nesse caso, estamos ensinando a máquina como trabalhar com os nossos dados, logo, estamos supervisionando o
+            aprendizado da máquina. Por isso, dizemos que esse algoritmo é um algoritmo de <strong>aprendizado
+                supervisionado</strong>.</p>
+        <p>No aprendizado supervisionado passamos todos os dados para treinar o modelo. Isto é, passamos os dados e os
+            resultados. Com base nisso, o algoritmo descobre uma forma de trabalhar com os dados.</p>
+        <p>Vimos que podemos utilizar esses tipos de algoritmos para prever o preço do frete, mas ainda temos que
+            classificar os clientes e agrupá-los por seus gostos, como podemos fazer isso?</p>
+        <h3>Classificando os dados</h3>
+        <p>Temos que descobrir se um cliente que vai comprar ou não um produto no site. Para isso, podemos utilizar
+            algumas informações como se ele veio de um link externo, como e-mail, ou um anúncio, se ele olhou a
+            descrição de outro produto, se ele tem cadastro.</p>
+        <p>Podemos utilizar dados de acesso dos usuários para treinar o modelo a classificar se o usuário pode comprar
+            ou não. Podemos pegar esses dados e falar para o nosso algoritmo: olha, esse usuário veio de um link
+            externo, não olhou a descrição, tem cadastro e comprou o produto.</p>
+        <p>Já esse outro, não veio de link externo, olhou a descrição, não tinha cadastro e comprou o produto. Para cada
+            um dos comportamentos no site, treinamos a máquina com os dados e com os resultados. Quando um novo usuário
+            acessa a página, podemos falar para o modelo qual foi o seu comportamento.</p>
+        <p>Assim, o modelo consegue predizer se esse novo usuário comprará ou não. Nesse caso, assim como no frete,
+            estamos passando os dados e os resultados para treinar nosso algoritmo. Contudo, ao contrário do outro, não
+            estamos tentando prever um valor e sim uma <strong>classificação</strong>.</p>
+        <p>Estamos querendo classificar um usuário em vai comprar ou não vai comprar. Portanto, esse tipo de algoritmo -
+            que também é um algoritmo de aprendizado supervisionado, já que estamos passando os dados e os resultados
+            para ensinar o modelo - é chamado de <strong>algoritmo de classificação</strong>.</p>
+        <p>Enquanto que o algoritmo para calcular o frete é chamado de <strong>algoritmo de regressão</strong>. Esses
+            dois tipos de algoritmo são os mais conhecidos, e mais utilizados, algoritmos para o aprendizado
+            supervisionado.</p>
+        <p>Todos esses algoritmos, como o aprendizado de máquina no geral, utiliza de funções matemáticas para treinar
+            os modelos. No nosso primeiro exemplo, podemos utilizar, por exemplo, a <a
+                    href="https://pt.wikipedia.org/wiki/Regress%C3%A3o_linear" target="_blank" rel="noopener"><strong>regressão
+                linear</strong></a>, enquanto que para classificar, nós podemos utilizar o <a
+                    href="https://pt.wikipedia.org/wiki/Regress%C3%A3o_linear" target="_blank" rel="noopener"><strong>algoritmo
+                de Naive Bayes</strong></a>, por exemplo.</p>
+        <p>Legal! Vimos como resolver dois dos nossos problemas. Basta agora, descobrir como podemos agrupar os
+            clientes.</p>
+        <h3>Criando grupos</h3>
+        <p>Olhando para os algoritmos que conhecemos, podemos pensar que criar grupos de clientes é um problema de
+            classificação. De fato, podemos aplicar classificação para criar grupos para a gente, mas que grupos
+            teríamos?</p>
+        <p>Grupos de clientes que compram eletrônicos? Grupo de clientes com até quarenta anos? Grupo de clientes da
+            região norte? Podemos utilizar esses grupos para enviar e-mails especiais para cada um deles, mas e se esses
+            clientes só tiverem isso em comum?</p>
+        <p>Isto é, talvez nem todos os clientes que compram eletrônicos ou os clientes que moram em uma determinada
+            região tenham gostos parecidos.</p>
+        <p>Mas então, como podemos agrupar os clientes? Vimos que podemos classificar nossos dados, mas isso poderia
+            gerar grupos não muito próximos ao que queremos. E se, ao invés de nós criarmos os grupos, falar para o
+            modelo agrupar os dados da maneira que ele achar melhor?</p>
+        <p>Dessa forma, por meio do algoritmo implementado, o modelo associa um dado a outro e dessa forma cria os
+            grupos.</p>
+        <p>Ao contrário da classificação, estamos passando para o modelo apenas os dados e não os resultados. Ou seja,
+            não estamos supervisionando o aprendizado, logo, dizemos que esse é um algoritmo de <strong>aprendizado não
+                supervisionado</strong>.</p>
+        <p>Diferente do aprendizado supervisionado, neste tipo de aprendizado nós não passamos os resultados para
+            ensinar o algoritmo. O próprio algoritmo pega o conjunto de dados e descobre como trabalhar com eles. Os
+            tipos de algoritmos mais utilizados nesse tipo de aprendizado são o <a
+                    href="https://pt.wikipedia.org/wiki/Clustering" target="_blank"
+                    rel="noopener"><strong>clustering</strong></a> e as <a
+                    href="https://pt.wikipedia.org/wiki/Regras_de_associa%C3%A7%C3%A3o" target="_blank"
+                    rel="noopener"><strong>regras de associação</strong></a>. Um exemplo de algoritmo é o <a
+                    href="https://pt.wikipedia.org/wiki/K-means" target="_blank" rel="noopener"><strong>K-Means</strong></a>.
+        </p>
+        <h3>Para saber mais</h3>
+        <p>Além desses tipos de algoritmos, existem também o chamado aprendizado de reforço. Nele a máquina interage com
+            o ambiente.</p>
+        <p>Essa interação gera um feedback, positivo ou negativo. Caso seja um feedback positivo, a máquina grava que
+            pode realizar essa ação novamente, em caso de feedback negativo, o modelo sabe que não pode executá-lo
+            novamente.</p>
+        <p>Essa foi uma breve introdução sobre o tema de aprendizado de máquina. Para cada conjunto de dados, podemos
+            aplicar diferentes algoritmos e modelos para alcançar os melhores resultados.</p>
+        <p>Aqui na Alura temos a <a href="https://www.alura.com.br/formacao-machine-learning"><strong>Formação Machine
+            Learning</strong></a>.</p>
+        <p>Nesta formação, você verá algoritmos de classificação e algoritmos não supervisionado. Aprenderá sobre
+            processamento de linguagem natural, validação e otimização de modelos. Além de sistemas de recomendação e
+            redes neurais.</p>
+        <p>Leia também:</p>
+        <ul>
+            <li><a href="/artigos/buscando-tweets-com-python">Buscando tweets com Python</a></li>
+            <li><a href="/artigos/entendendo-os-cabos-de-rede">Entendendo os cabos de rede</a></li>
+            <li><a href="/artigos/diferencas-entre-get-e-post">HTTP: Diferenças entre GET e POST </a></li>
+            <li><a href="/artigos/praticando-para-a-olimpiada-brasileira-de-informatica">Praticando para a Olimpíada
+                Brasileira de Informática </a></li>
+            <li><a href="/artigos/pros-e-contras-do-scroll-infinito">Prós e contras do scroll infinito </a></li>
+        </ul>
+    </div>
+    <div class="paginas">
+        <ul class="social-icons">
+            <li class="social-icon">
+                <img src="./img/icones/fb.png" alt="">
+            </li>
+            <li class="social-icon">
+                <img src="./img/icones/insta.png" alt="">
+            </li>
+            <li class="social-icon">
+                <img src="./img/icones/linkedin.png" alt="">
+            </li>
+            <li class="social-icon">
+                <img src="./img/icones/twitter.png" alt="">
+            </li>
+            <li class="social-icon">
+                <img src="./img/icones/yt.png" alt="">
+            </li>
+        </ul>
+    </div>
+</main>
+<footer class="rodape">
+    <ul class="rodape__links">
+        <li class="rodape__link">Trabalhe com a gente</li>
+        <li class="rodape__link">Termos de uso</li>
+        <li class="rodape__link">Como escrever pro nosso blog</li>
+        <li class="rodape__link">Sobre nós</li>
+    </ul>
+    <div class="form__cadastro">
+        <p class="form__cadastro__text">Deseja receber um aviso quando um artigo novo sair?
+        </p>
+
+        <p class="form__cadastro__text">Cadastre seu email abaixo!
+        </p>
+
+        <form class="form__cadastro__form" action="">
+            <input class="form__cadastro__input" type="email"/>
+            <button class="form__cadastro__cta">Cadastrar!</button>
+        </form>
+    </div>
+    <div class="rodape__logo">
+        <img alt="nadanda" class="rodape__image" src="./img/icones/logo-sapiens.png"/>
+        <h1 class="rodape__titulo">Sapiens</h1>
+    </div>
+</footer>
+</body>
+</html>

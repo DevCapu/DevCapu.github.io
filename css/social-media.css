@@ -1,0 +1,35 @@
+.social-icons {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icon {
+    display: block;
+    flex: 1;
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media (min-width: 1024px) {
+    .social-icons {
+        position: fixed;
+        width: initial;
+        right: 2rem;
+        top: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-icon {
+        margin-bottom: 1rem;
+    }
+}
